@@ -1,1 +1,94 @@
-# test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitLab Wiki Navigation</title>
+  <style>
+    /* Reset default styles */
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Styles for the navigation bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover {
+      background-color: #111;
+    }
+
+    /* Dropdown menu */
+    .navbar .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .navbar .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .navbar .dropdown-content a:hover {
+      background-color: #111;
+    }
+
+    .navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Dropdown 1</a>
+      <div class="dropdown-content">
+        <a href="#sub1">Submenu 1</a>
+        <a href="#sub2">Submenu 2</a>
+        <a href="#sub3">Submenu 3</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Dropdown 2</a>
+      <div class="dropdown-content">
+        <a href="#sub4">Submenu 4</a>
+        <a href="#sub5">Submenu 5</a>
+        <a href="#sub6">Submenu 6</a>
+      </div>
+    </li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
