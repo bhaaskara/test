@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizontal Navigation with Dropdown</title>
+  <title>Horizontal Navigation with Dropdown (Markdown Compatible)</title>
   <style>
     /* Style the navigation bar */
     .navigation {
@@ -52,28 +52,34 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="navigation">
-      <a href="#">Home</a>
-      <div class="dropdown">
-        <a href="#">Products</a>
+
+## Horizontal Navigation Bar
+
+Here's an example of a horizontal navigation bar using HTML within markdown:
+
+<div class="navigation">
+  <a href="#">Home</a>
+  <div class="dropdown">
+    <a href="#">Products</a>
+    <div class="dropdown-content">
+      <a href="#">Category 1</a>
+      <a href="#">Category 2</a>
+      <div class="dropdown"> <a href="#">Subcategory 1.1</a>
         <div class="dropdown-content">
-          <a href="#">Category 1</a>
-          <a href="#">Category 2</a>
-          <div class="dropdown"> <a href="#">Subcategory 1.1</a>
-            <div class="dropdown-content">
-              <a href="#">Subcategory 1.1.1</a>
-              <a href="#">Subcategory 1.1.2</a>
-            </div>
-          </div>
-          <a href="#">Category 3</a>
+          <a href="#">Subcategory 1.1.1</a>
+          <a href="#">Subcategory 1.1.2</a>
         </div>
       </div>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+      <a href="#">Category 3</a>
+    </div>
+  </div>
+  <a href="#">About Us</a>
+  <a href="#">Contact</a>
+</div>
 
-  </body>
+**Content goes here**
+
+You can replace the "Content goes here" section with your actual markdown content.
+
+</body>
 </html>
-
